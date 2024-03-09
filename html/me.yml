@@ -1,0 +1,7 @@
+version: '1'
+
+about_me:
+  photo: 'assets/img/louis.rodet.png'
+  name: 'Louis Rodet'
+  job: 'Student'
+  company: 'EPITA'

@@ -1,0 +1,64 @@
+h1 {
+    color:red;
+}
+
+.profile-picture {
+    width: auto;
+    width: 200px;
+    border-radius: 50%;
+    border: solid blueviolet 4px;
+    box-shadow: 0 0 10px grey;
+    margin:  5px auto 0 auto;
+    display: block;
+    transform: rotate(0turn) scale(1);
+    transition: all 800ms ease;
+}
+
+#root {
+    border-radius: 5px;
+    border: solid black 1px;
+}
+
+.aboutme {
+    border-radius: 5px;
+    display: block;
+    margin: 1px auto;
+    width: 300px;
+    background-color: white;
+}
+
+.profile-picture:hover {
+    transform: rotate(1turn) scale(1.1);
+    transition: all 800ms ease;
+}
+
+body {
+    background-color: #f5f6f7;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    flex: 1;
+    width: 150px; /* Vous pouvez ajuster la largeur en fonction de vos besoins */
+    min-width: 200px;
+    margin: 5px;
+    text-align: center;
+    background-color: #f2f2f2; /* Ajoutez une couleur de fond si vous le souhaitez */
+    border-radius: 5px;
+}

@@ -1,0 +1,9 @@
+{
+    "aboutme" : {
+        "photo": "assets/img/louis.rodet.jpg",
+        "name": "Louis Rodet",
+        "job": "Student",
+        "company": "EPITA",
+        "cv": "#"
+    }
+}
