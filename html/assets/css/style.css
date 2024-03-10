@@ -125,10 +125,3 @@ h1 {
     width: 1.5em;
     height: 1.5em;
 }
-
-.votre-div {
-    width: 100px;
-    height: 100px;
-    background-image: url('../img/discord.svg');
-    background-size: cover;
-}
