@@ -1,5 +1,5 @@
 body {
-    background-color: #f5f6f7;
+    background-color: #f2f2f2;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -8,22 +8,9 @@ h1 {
     color:red;
 }
 
-.profile-picture {
-    width: auto;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: solid blueviolet 4px;
-    box-shadow: 0 0 10px grey;
-    margin:  5px auto 0 auto;
-    display: block;
-    transform: rotate(0turn) scale(1);
-    transition: all 800ms ease;
-}
-
 #root {
     border-radius: 5px;
-    border: solid black 1px;
+    border: solid black 0px;
 }
 
 .aboutme {
@@ -32,10 +19,26 @@ h1 {
     margin: 1px auto;
     width: 300px;
     background-color: white;
+    border: 1px solid #dfe1e6;
+    margin-top: 5px;
 }
 
-.profile-picture:hover {
-    transform: rotate(1turn) scale(1.1);
+.profile-picture-div {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid #dfadb6 4px;
+    box-shadow: 0 0 10px grey;
+    margin:  5px auto 0 auto;
+    display: block;
+    transform: scale(1);
+    transition: all 800ms ease;
+}
+
+
+
+.profile-picture-div:hover {
+    transform: scale(1.1);
     transition: all 800ms ease;
 }
 
@@ -47,21 +50,27 @@ h3 {
     text-align: center;
 }
 
-
 .contact-list {
     list-style: none;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+    padding: 2px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .contact-element {
-    flex: 1;
-    width: 150px; /* Vous pouvez ajuster la largeur en fonction de vos besoins */
-    min-width: 50px;
-    margin: 5px;
-    text-align: center;
+    padding: 0px;
+    margin: 0 .5em;
     background-color: #f2f2f2; /* Ajoutez une couleur de fond si vous le souhaitez */
+    border: solid 1px grey;
+    transition: all 500ms ease;
     border-radius: 5px;
     color: blueviolet;
+    display: inline-block;
+}
+
+.contact-element:hover {
+    background-color: #799fec;
+    transition: all 500ms ease;
 }

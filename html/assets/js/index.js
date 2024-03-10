@@ -17,9 +17,10 @@ function loader() {
                 aboutMeDiv = document.createElement('div');
                 aboutMeDiv.classList.add('aboutme');
 
-                pp = document.createElement('img');
-                pp.src = jsonData.aboutme.photo;
-                pp.classList.add('profile-picture');
+                pp = document.createElement('div');
+                pp.classList.add('profile-picture-div');
+                pp.style.backgroundImage = `url('${jsonData.aboutme.photo}')`;
+                pp.style.backgroundSize = `cover`;
                 aboutMeDiv.appendChild(pp);
 
                 nameP = document.createElement('h2');
@@ -38,15 +39,16 @@ function loader() {
 
                 for (var i = 0; i < jsonData.contact.length; i++) {
                     li = document.createElement('li');
-                    li.classList.add('contact-element');
-                    logo = document.createElement('img');
-                    logo.src = jsonData.contact[i].logo;
-                    logo.style = 'width: 1em; display: inline; margin-right: .3em; vertical-align: middle;';
-                    li.appendChild(logo);
-                    net_txt = document.createElement('p');
-                    net_txt.textContent = jsonData.contact[i].name;
-                    net_txt.style = 'display:inline;';
-                    li.appendChild(net_txt);
+                    link = document.createElement('a');
+                    link.href = jsonData.contact[i].link;
+                        li.classList.add('contact-element');
+                        li.style = 'display: inline-block; vertical-align: middle; padding: 0.5em;';
+                        link.style.backgroundImage = `url('${jsonData.contact[i].logo}')`;
+                        link.style.backgroundSize = 'cover';
+                        link.style.width = '1.5em';
+                        link.style.height = '1.5em';
+                        link.style.display = 'block';
+                    li.appendChild(link);
                     contactList.appendChild(li);
                 }
                 aboutMeDiv.appendChild(contactList);
