@@ -1,3 +1,9 @@
+body {
+    background-color: #f5f6f7;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 h1 {
     color:red;
 }
@@ -5,6 +11,7 @@ h1 {
 .profile-picture {
     width: auto;
     width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: solid blueviolet 4px;
     box-shadow: 0 0 10px grey;
@@ -32,11 +39,6 @@ h1 {
     transition: all 800ms ease;
 }
 
-body {
-    background-color: #f5f6f7;
-    margin: 0;
-}
-
 h2 {
     text-align: center;
 }
@@ -46,19 +48,20 @@ h3 {
 }
 
 
-ul {
+.contact-list {
     list-style: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
 }
 
-li {
+.contact-element {
     flex: 1;
     width: 150px; /* Vous pouvez ajuster la largeur en fonction de vos besoins */
-    min-width: 200px;
+    min-width: 50px;
     margin: 5px;
     text-align: center;
     background-color: #f2f2f2; /* Ajoutez une couleur de fond si vous le souhaitez */
     border-radius: 5px;
+    color: blueviolet;
 }

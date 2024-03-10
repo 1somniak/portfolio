@@ -5,5 +5,32 @@
         "job": "Student",
         "company": "EPITA",
         "cv": "#"
-    }
+    },
+    "contact": [
+        {
+            "name": "Github",
+            "link": "https://github.com/1somniak/",
+            "description": "github.com/1somniak",
+            "logo": "assets/img/github.svg"
+        },
+        {
+            "name": "Discord",
+            "link": "@louloudu45",
+            "description": "@louloudu45",
+            "logo": "assets/img/discord.svg"
+        },
+        {
+            "name": "Mail",
+            "link": "mailto:louis.rodet@epita.fr",
+            "description": "louis.rodet@epita.fr",
+            "logo": "assets/img/mail.svg"
+        },
+        {
+            "name": "LinkedIn",
+            "link": "https://www.linkedin.com/in/louis-rodet/",
+            "description": "/in/louis-rodet",
+            "logo": "assets/img/linkedin.svg"
+        }
+    ]
+    
 }

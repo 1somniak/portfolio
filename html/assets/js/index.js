@@ -33,6 +33,23 @@ function loader() {
                 rootElement.appendChild(aboutMeDiv);
 
 
+                contactList = document.createElement('ul');
+                contactList.classList.add('contact-list');
+
+                for (var i = 0; i < jsonData.contact.length; i++) {
+                    li = document.createElement('li');
+                    li.classList.add('contact-element');
+                    logo = document.createElement('img');
+                    logo.src = jsonData.contact[i].logo;
+                    logo.style = 'width: 1em; display: inline; margin-right: .3em; vertical-align: middle;';
+                    li.appendChild(logo);
+                    net_txt = document.createElement('p');
+                    net_txt.textContent = jsonData.contact[i].name;
+                    net_txt.style = 'display:inline;';
+                    li.appendChild(net_txt);
+                    contactList.appendChild(li);
+                }
+                aboutMeDiv.appendChild(contactList);
         
             })
             .catch(error => console.error('Erreur lors du chargement du fichier JSON:', error));
