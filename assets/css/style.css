@@ -23,6 +23,10 @@ h1 {
     border: 1px solid #dfe1e6;
     margin-top: 5px;
     text-align: center;
+    background-image: url('../img/baniere.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    
 
     position: absolute;
     top: 50%;
@@ -31,19 +35,19 @@ h1 {
 }
 
 .profile-picture-div {
-    width: 200px;
-    height: 200px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     border: solid #799fec 4px;
-    box-shadow: 0 0 10px grey;
-    margin: 10px auto 15px auto;
+    /*box-shadow: 0 0 10px grey;*/
+    margin: 20px auto 10px auto;
     display: block;
-    transform: scale(1);
+    /*transform: scale(1);*/
     transition: all 800ms ease;
 }
 
 .profile-picture-div:hover {
-    transform: scale(1.1);
+    /*transform: scale(1.1);*/
     transition: all 800ms ease;
 }
 
