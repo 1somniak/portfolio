@@ -4,21 +4,10 @@
         "name": "Louis Rodet",
         "job": "Student",
         "company": "EPITA",
+        "place": "Paris, France",
         "cv": "#"
     },
     "contact": [
-        {
-            "name": "Github",
-            "link": "https://github.com/1somniak/",
-            "description": "github.com/1somniak",
-            "logo": "assets/img/github.svg"
-        },
-        {
-            "name": "Discord",
-            "link": "@louloudu45",
-            "description": "@louloudu45",
-            "logo": "assets/img/discord.svg"
-        },
         {
             "name": "Mail",
             "link": "mailto:louis.rodet@epita.fr",
@@ -30,6 +19,18 @@
             "link": "https://www.linkedin.com/in/louis-rodet/",
             "description": "/in/louis-rodet",
             "logo": "assets/img/linkedin.svg"
+        },
+        {
+            "name": "Github",
+            "link": "https://github.com/1somniak/",
+            "description": "github.com/1somniak",
+            "logo": "assets/img/github.svg"
+        },
+        {
+            "name": "Discord",
+            "link": "https://discord.com/users/505534531126820866",
+            "description": "@louloudu45",
+            "logo": "assets/img/discord.svg"
         }
     ]
     

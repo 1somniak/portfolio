@@ -24,12 +24,19 @@ function loader() {
                 aboutMeDiv.appendChild(pp);
 
                 nameP = document.createElement('h2');
+                nameP.classList.add('profile-name');
                 nameP.textContent = jsonData.aboutme.name;
                 aboutMeDiv.appendChild(nameP);
 
                 jobP = document.createElement('h3');
+                jobP.classList.add('profile-job');
                 jobP.textContent = `${jsonData.aboutme.job} at ${jsonData.aboutme.company}`;
                 aboutMeDiv.appendChild(jobP);
+
+                placeP = document.createElement('p');
+                placeP.classList.add('profile-place');
+                placeP.textContent = jsonData.aboutme.place;
+                aboutMeDiv.appendChild(placeP); 
 
                 rootElement.appendChild(aboutMeDiv);
 
@@ -39,19 +46,24 @@ function loader() {
 
                 for (var i = 0; i < jsonData.contact.length; i++) {
                     li = document.createElement('li');
-                    link = document.createElement('a');
-                    link.href = jsonData.contact[i].link;
-                        li.classList.add('contact-element');
-                        li.style = 'display: inline-block; vertical-align: middle; padding: 0.5em;';
-                        link.style.backgroundImage = `url('${jsonData.contact[i].logo}')`;
-                        link.style.backgroundSize = 'cover';
-                        link.style.width = '1.5em';
-                        link.style.height = '1.5em';
-                        link.style.display = 'block';
+                    li.setAttribute('onclick', `window.open('${jsonData.contact[i].link}', '_blank')`);
+                    li.setAttribute('description', jsonData.contact[i].description);
+                    //li.title = jsonData.contact[i].description;
+                    link = document.createElement('div');
+                    link.classList.add('contact-element-logo');
+                    
+                    li.classList.add('contact-element');
+                    link.style.backgroundImage = `url('${jsonData.contact[i].logo}')`;
+                    link.style.backgroundSize = 'cover';
                     li.appendChild(link);
                     contactList.appendChild(li);
                 }
+
+
                 aboutMeDiv.appendChild(contactList);
+                mdr = document.createElement('div')
+                mdr.classList.add('mdr');
+                aboutMeDiv.appendChild(mdr);
         
             })
             .catch(error => console.error('Erreur lors du chargement du fichier JSON:', error));
@@ -60,3 +72,8 @@ function loader() {
 }
 
 loader();
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    
+});

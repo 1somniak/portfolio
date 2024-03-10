@@ -1,0 +1,124 @@
+body {
+    background-color: #f2f2f2;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    height: 100vh;
+}
+
+h1 {
+    color: red;
+}
+
+#root {
+    border-radius: 5px;
+    border: solid black 0px;
+}
+
+.aboutme {
+    border-radius: 5px;
+    display: block;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #dfe1e6;
+    margin-top: 5px;
+    text-align: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile-picture-div {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid #799fec 4px;
+    box-shadow: 0 0 10px grey;
+    margin: 10px auto 15px auto;
+    display: block;
+    transform: scale(1);
+    transition: all 800ms ease;
+}
+
+.profile-picture-div:hover {
+    transform: scale(1.1);
+    transition: all 800ms ease;
+}
+
+.profile-name {
+    text-align: center;
+    margin: 5px auto;
+}
+
+.profile-job {
+    text-align: center;
+    margin: 0;
+}
+
+.profile-place {
+    text-align: center;
+    color: #666;
+    margin: 0;
+}
+
+.contact-list {
+    display: inline-block;
+    margin: 10px auto;
+    padding-inline-start: 0;
+}
+
+.contact-element {
+    padding: 0.5em;
+    margin: 0 .5em;
+    background-color: #f2f2f2;
+    border: solid 3px #799fec;
+    transition: all 500ms ease;
+    border-radius: 5px;
+    color: blueviolet;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+.contact-element:hover {
+    background-color: #799fec;
+    transition: all 500ms ease;
+}
+
+.contact-element:hover::before {
+    content: attr(description);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background-color: #799fec;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.contact-element:hover::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border: 8px solid transparent;
+    border-bottom-color: #799fec;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.contact-element:hover::before,
+.contact-element:hover::after {
+    opacity: 1;
+}
+
+.contact-element-logo {
+    width: 1.5em;
+    height: 1.5em;
+}
