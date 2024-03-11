@@ -20,15 +20,18 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
-.aboutme {
+.small-card {
     border-radius: 5px;
     display: block;
     width: 300px;
     background-color: white;
     border: 1px solid #dfe1e6;
     margin-top: 5px;
+    margin-bottom: 5px;
     text-align: center;
-    background-image: url('../img/baniere.jpeg');
+}
+
+.aboutme {
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -124,4 +127,31 @@ h1 {
 .contact-element-logo {
     width: 1.5em;
     height: 1.5em;
+}
+
+.formation {
+    border: 1px solid var(--primary-color);
+}
+
+.formation-title {
+    text-align: left;
+    margin: 15px 20px 10px 20px;
+}
+
+.school {
+    text-align: left;
+    margin: 10px 30px;
+}
+
+.schoologo {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    display: inline-block;
+    vertical-align: middle;
+
 }

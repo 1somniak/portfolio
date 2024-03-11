@@ -4,39 +4,65 @@
         "secondarycolor": "#bcd2ff",
         "thirdcolor": "blue"
     },
-    "aboutme" : {
+    "aboutme": {
         "photo": "assets/img/louis.rodet.jpg",
+        "banner": "assets/img/baniere.jpeg",
         "name": "Louis Rodet",
         "job": "Student",
         "company": "EPITA",
         "place": "Paris, France",
-        "cv": "#"
+        "cv": "#",
+        "contact": [
+            {
+                "name": "Mail",
+                "link": "mailto:louis.rodet@epita.fr",
+                "description": "louis.rodet@epita.fr",
+                "logo": "assets/img/mail.svg"
+            },
+            {
+                "name": "LinkedIn",
+                "link": "https://www.linkedin.com/in/louis-rodet/",
+                "description": "/in/louis-rodet",
+                "logo": "assets/img/linkedin.svg"
+            },
+            {
+                "name": "Github",
+                "link": "https://github.com/1somniak/",
+                "description": "github.com/1somniak",
+                "logo": "assets/img/github.svg"
+            },
+            {
+                "name": "Discord",
+                "link": "https://discord.com/users/505534531126820866",
+                "description": "@louloudu45",
+                "logo": "assets/img/discord.svg"
+            }
+        ]
     },
-    "contact": [
-        {
-            "name": "Mail",
-            "link": "mailto:louis.rodet@epita.fr",
-            "description": "louis.rodet@epita.fr",
-            "logo": "assets/img/mail.svg"
-        },
-        {
-            "name": "LinkedIn",
-            "link": "https://www.linkedin.com/in/louis-rodet/",
-            "description": "/in/louis-rodet",
-            "logo": "assets/img/linkedin.svg"
-        },
-        {
-            "name": "Github",
-            "link": "https://github.com/1somniak/",
-            "description": "github.com/1somniak",
-            "logo": "assets/img/github.svg"
-        },
-        {
-            "name": "Discord",
-            "link": "https://discord.com/users/505534531126820866",
-            "description": "@louloudu45",
-            "logo": "assets/img/discord.svg"
-        }
-    ]
-    
+    "formation": {
+        "name": "Formation",
+        "formation": [
+            {
+                "name": "EPITA",
+                "begin": "2022",
+                "end": "2027",
+                "logo": "assets/img/epita.svg",
+                "description": "EPITA School of Engeneering and Computer Science"
+            },
+            {
+                "name": "UPES",
+                "begin": "Jan 2024",
+                "end": "May 2024",
+                "logo": "assets/img/upes.svg",
+                "description": "UPES, Computer Science, Exchange Program"
+            },
+            {
+                "name": "SCSE",
+                "begin": "Sep 2019",
+                "end": "Jun 2022",
+                "logo": "assets/img/scse.png",
+                "description": "Lycée sainte croix sainte euverte"
+            }
+        ]
+    }
 }
