@@ -153,5 +153,24 @@ h1 {
     border: 1px solid var(--primary-color);
     display: inline-block;
     vertical-align: middle;
+}
 
+.schoolblabla {
+    vertical-align: top;
+    display: inline-block;
+    margin: 0 10px;
+    width: 176px;
+    border: 1px solid var(--primary-color);
+}
+
+.schoolname {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+.schooldate {
+    display: inline-block;
+    color: grey;
+    font-size: 15px;
+    margin: 0;
 }

@@ -74,15 +74,15 @@ function loadformation(jsonData) {
         school.appendChild(schoologo);
 
         let schoolblabla = document.createElement('div');
-        schoolblabla.style = 'display:inline-block; margin: 0 10px; vertical-align: middle;';
+        schoolblabla.classList.add('schoolblabla');
         school.appendChild(schoolblabla);
         
         let schoolname = document.createElement('h4');
-        schoolname.style.margin = '0';
+        schoolname.classList.add('schoolname');
         schoolname.textContent = jsonData.formation.formation[i].name;
         schoolblabla.appendChild(schoolname);
         let schooldate = document.createElement('p');
-        schooldate.style.margin = '0';
+        schooldate.classList.add('schooldate');
         schooldate.textContent = `${jsonData.formation.formation[i].begin} - ${jsonData.formation.formation[i].end}`;
         schoolblabla.appendChild(schooldate);
         formationDiv.appendChild(school);
